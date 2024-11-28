@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+.parent-container-register{
+  position:fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color:white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+  margin-top:-8%;
+  margin-bottom:8%;
+}
+
+.register-form-container{
+    background-color: #00364D;
+  border-radius: 2px;
+  border: 8px;
+  width: 360px;
+  height:550px;
+  padding:40px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.closeRegister-cont{
+  display:flex;
+  justify-content: end;
+  margin-bottom:20px;
+}
+
+.closeRegisterForm{
+  font-size:1.1rem;
+  color:white;
+  background-color: transparent;
+  cursor:pointer;
+  transition:0.5s ease;
+}
+
+.register-password-container, .register-email-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.parent-container-register input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding:10px 10px;
+  font-size: 16px;
+  border-radius: 2px;
+  color: black;
+
+}
+
+.parent-container-register input::placeholder {
+  color: rgb(128, 128, 128);
+}
+
+.parent-container-register .registerSubmit {
+    background-color:#f5e947;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color:#00364D;
+  font-weight: 700;
+  margin-top:1%;
+
+}
+
+.loginLink{
+  margin-top: 20px;
+  cursor: pointer;
+  color:white;
+}
+
+.login-nav-link{
+  color:white;
+  transition:0.5s ease;
+}
+
+
+
+@keyframes dropTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,22 @@
+.home-parent-container{
+
+   margin:30px 200px;
+}
+
+.home-content-parent h2{
+    font-size:2.2rem;
+    font-weight:700;
+    color:#00364D;
+}
+
+.fb-covers{
+    width:200px;
+    height:auto;
+}
+
+@media screen and (min-width:2500px){
+    .fb-covers{
+        width:350px;
+        height:auto;
+    }
+}
