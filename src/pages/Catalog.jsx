@@ -5,6 +5,7 @@ import book2 from "../images/book2.jpg"
 import book3 from "../images/book3.jpg"
 import book4 from "../images/book4.jpg"
 import book5 from "../images/book5.jpg"
+import { NavLink } from 'react-router-dom'
 
 export default function Catalog() {
   return (
@@ -24,53 +25,6 @@ export default function Catalog() {
         </div>
 
     </div>
-        {/*
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Type
-                        </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Genre
-                        </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sort By
-                        </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Location and Availability
-                        </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <button className='nav-link filterBtn'>Filter</button>
-                    </li>
-            </ul>
-        */}
         <div class="filter-container">
             <select>
                 <option value="0">Type</option>
@@ -128,7 +82,7 @@ export default function Catalog() {
             <div className='book-container'>
                 <img src={book1} alt="the maze runner" className='book1'/>
                 <div className='book-content'>
-                    <h2>Abstract and Colour Techniques in Painting / Claire Harrigan</h2>
+                    <NavLink to="/catalog1" style={{textDecoration:"none"}}><h2>Abstract and Colour Techniques in Painting / Claire Harrigan</h2></NavLink>
                     <p>By Harrigan, Claire</p>
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     <div style={{marginTop:"10px"}}></div>

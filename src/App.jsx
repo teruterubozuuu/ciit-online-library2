@@ -6,6 +6,7 @@ import Catalog from './pages/Catalog'
 import Header from './component/Header'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Catalog1 from './pages/Catalog1'
 
 function App() {
  
@@ -20,6 +21,7 @@ function App() {
           <Route path="/catalog" element={<Catalog/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/register" element={<Register/>}></Route>
+          <Route path="/catalog1" element={<Catalog1/>}></Route>
         </Routes>
     </Router>
     </>
