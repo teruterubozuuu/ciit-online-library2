@@ -2,7 +2,7 @@
   "name": "ciit-online-library",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://teruterubozuuu.github.io/ciit-online-library2/",
+  "homepage":   "https://teruterubozuuu.github.io/ciit-online-library2",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
